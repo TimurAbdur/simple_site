@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+html,body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 20px 90px;
+    border: 1px solid #7875FE;  
+    color: #7875FE;
+    font-size: 20px;
+    transition: 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+} 
+
+.button:hover {
+    color: #FFF;
+    background: #7875FE;
+}
+
+.button:active {
+    color: #FFF;
+    background: #4946B4;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .button {
+        padding: 15px 50px;
+    }
+}

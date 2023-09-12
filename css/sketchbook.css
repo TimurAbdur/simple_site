@@ -1,0 +1,74 @@
+.sketchbook {
+    padding-top: 90px;
+}
+
+.sketchbook__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.sketchbook__content {
+    max-width: 350px;
+}
+.sketchbook__content-title {
+    color: #666;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+.sketchbook__content-desc {
+    margin-bottom: 30px;
+    line-height: 170%;
+    color: #85859B;
+    font-size: 18px;
+}
+
+.sketchbook__img-wrap {
+    height: 410px;
+    overflow:hidden;
+}
+
+.sketchbook__img-wrap img {
+    max-width: 100%;
+}
+
+@media (max-width:950px) {
+    .sketchbook {
+        padding-top: 60px;
+    }
+
+    .sketchbook__img-wrap {
+        height: auto;
+    }
+}
+
+@media (max-width:800px) {
+    .sketchbook {
+        padding-bottom: 60px;
+    }
+
+    .sketchbook__content {
+        max-width: 100%;
+    }
+    .sketchbook__inner {
+        flex-direction: column;
+    }
+
+    .sketchbook__content-title {
+        margin-bottom: 20px;
+    }
+
+    .sketchbook__img-wrap {
+        order: -2;
+    }
+}
+
+@media (max-width:425px) {
+    .sketchbook__content-title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .sketchbook__content-desc {
+        font-size: 16px;
+    }
+}
